@@ -277,7 +277,9 @@ input {
 
 @media screen and (max-width: 768px){
 
-
+    .bio-contents {
+        display: block;
+    }
 
     /* CONTACT */
     .row {
@@ -312,6 +314,9 @@ input {
     }
     #subjectSubmit {
         width: 160px;
+    }
+    .bio-contents {
+        display: block;
     }
 }
 
