@@ -255,10 +255,11 @@ input {
 }
 
 .soloStill {
-    width: 30vw;
+    width: 40vw;
     margin: .5vw 1vw 1vw .5VW;
     /* box-shadow: darkgrey 0px 0px 13px -1px; */
-
+    padding: 5px;
+    background: whitesmoke;
 }
 
 .r1 {
@@ -270,22 +271,30 @@ input {
     text-align: center;
     color: #d3d3d3;
     margin-top: 25px;
+    margin-bottom: 25px;
 
 }
 .carousel {
     margin: .5vw .5vw 1vw 1vw;
     width: 70vw;
     /* box-shadow: darkgrey 0px 0px 13px -1px; */
-
+}
+.carousel-inner {
+    overflow: visible;
+}
+.d-block {
+    padding: 5px 5px 5px 5px ;
+    background: whitesmoke;
 }
 .stills {
     text-align: center;
 }
 .still {
     width: 45vw;
-    margin: 1%;
+    margin: 1vw;
+    padding: 5px;
+    background: whitesmoke;
     /* box-shadow: darkgrey 0px 0px 13px -1px; */
-
 }
 /* ____________________________________________ Media Queries ______________________________________________ */
 
@@ -344,9 +353,9 @@ input {
 @media screen and (max-width: 640px){
     
     /* ====== NAVBAR ====== */
-    .navbar {
+    /* .navbar {
         width: 100vw;
-    }
+    } */
     #emailBody {
         width: 300px;
     }
@@ -361,7 +370,7 @@ input {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 699px) {
     .navbar {
         display: none;
     }
@@ -407,13 +416,25 @@ input {
     }
 
     /* PHOTO GALLERY */
-    .photo-container {
-        display: block;
-        padding: 0;
+    .r1 {
+        display: grid;
+        justify-items: center;
     }
-    .gallery {
-        width: 85vw;
+    .w-100 {
+        width: 80vw;
     }
+    .stills {
+        display: grid;
+        justify-items: center;
+    }
+    .still {
+        width: 80vw!important;
+    }
+    .soloStill {
+        width: 80vw;
+    }
+
+
     /* CONTACT PAGE */
     .contact-container {
         margin-top: 0;
