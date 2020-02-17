@@ -299,6 +299,12 @@ input {
     background: whitesmoke;
     /* box-shadow: darkgrey 0px 0px 13px -1px; */
 }
+.rando {
+    width: 80vw;
+    margin: 1vw;
+    padding: 5px;
+    background: whitesmoke;
+}
 /* ____________________________________________ Media Queries ______________________________________________ */
 
 
